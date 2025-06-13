@@ -41,7 +41,7 @@ header, main, footer {
   max-width: 840px;
   width: 90vw;
   margin: 0 auto;
-  color: var(-accent3-color);
+  color: var(--accent3-color);
 }
 
 h1, h2 {
