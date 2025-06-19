@@ -48,6 +48,7 @@ h1, h2 {
   font-family: var(--heading-font);
   color: var(--accent3-color);
   background-color: var(--secondary-color);
+  text-align: center;
 }
 
 nav {
@@ -84,7 +85,7 @@ section.history > *:not(h2){
   align-self: center;
 }
 
-section img {
+section img, div img {
   max-width: 100%;
 }
 
@@ -105,9 +106,38 @@ section.adventure figure {
   margin: .5rem; 
 }
 
-figure {
+iframe {
+  display: block;
+  margin: auto;
+}
+
+.staff{
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.staff h2 {
+  grid-row: 1;
+  grid-column: 1 / 4;
+}
+
+.staff figure {
+  grid-row: 2;
   text-align: center;
   align-self: center;
+  margin-bottom: 1em;
+}
+
+.contact-table {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, 2em);
+}
+
+.embed {
+  margin: 2rem;
 }
 
 .socialmedia {
