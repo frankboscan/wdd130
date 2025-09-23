@@ -185,5 +185,6 @@ section.adventure figure {
 }
 
 .socialmedia a {
+  text-decoration: none;
   display: flex;
 }
