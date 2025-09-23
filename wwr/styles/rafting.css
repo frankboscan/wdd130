@@ -8,15 +8,6 @@
   --body-font: "Work Sans", sans-serif;
 }
 
-header {
-	display: grid;
-  grid-template-columns: 1fr 1fr;
-	align-items: center;
-  justify-items: center;
-  background-color: var(--primary-color);
-  color: var(--accent3-color);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +28,22 @@ footer {
   background-color: var(--secondary-color);
 }
 
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--accent3-color);
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+header {
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+	align-items: center;
+  justify-items: center;
+  background-color: var(--primary-color);
+  color: var(--accent3-color);
+}
+
 header, main, footer {
   max-width: 840px;
   width: 90vw;
@@ -44,11 +51,9 @@ header, main, footer {
   color: var(--accent3-color);
 }
 
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--accent3-color);
-  background-color: var(--secondary-color);
-  text-align: center;
+iframe {
+  display: block;
+  margin: auto;
 }
 
 nav {
@@ -106,47 +111,12 @@ section.adventure figure {
   margin: .5rem; 
 }
 
-iframe {
-  display: block;
-  margin: auto;
-}
-
-.staff{
-  display: grid;
-  grid-template-rows: 1fr 10fr;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-}
-
-.staff h2 {
-  grid-row: 1;
-  grid-column: 1 / 4;
-}
-
-.staff figure {
-  grid-row: 2;
-  text-align: center;
-  align-self: center;
-  margin-bottom: 1em;
-}
+/* Class selectors */
 
 .contact-table {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(3, 2em);
-}
-
-.embed {
-  margin: 2rem;
-}
-
-.socialmedia {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.socialmedia a {
-  display: flex;
 }
 
 .hero {
@@ -184,4 +154,36 @@ iframe {
   float: right;
   width: 125px;
   box-shadow: 0 0 30px gray;
+}
+
+.staff{
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.staff h2 {
+  grid-row: 1;
+  grid-column: 1 / 4;
+}
+
+.staff figure {
+  grid-row: 2;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 1em;
+}
+
+.embed {
+  margin: 2rem;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.socialmedia a {
+  display: flex;
 }
