@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Frank Boscan">
+    <meta name="description" content="Sample quiz form for my WDD130 class.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Boscan | WDD130 | Quiz Form</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+  </head>
+  <body>
+    <header>
+      <h1>Low-blue-light HTML/CSS Quiz</h1>
+    </header>
+    <main>
+      <form>
+        <label for="html1">Which of the following is not valid html?</label>
+        <select id="html1" name="html1">
+          <option value="" selected="selected" disabled="disabled">Select one:</option>
+          <option value="utf">&lt;meta charset=&quot;UTF-8&quot;&gt;</option>
+          <option value="h1">&lt;Excellent Sample Quiz&gt;</option>
+          <option value="comment">&lt;!-- My comment --&gt;</option>
+          <option value="p">&lt;p&gt;YOLO!!&lt;/p&gt;</option>
+        </select>
+        <label for="q1">With what line should every HTML5 document begin?</label>
+        <input type="text" id="q1" name="q1">
+        <label for="q4">What is the current version of HTML?</label>
+        <input type="number" id="q4" name="q4" min="0" max="8" step="1">
+        <label for="css1">Which of the following is valid CSS?</label>
+        <select id="css1" name="css1">
+          <option value="" selected="selected" disabled="disabled">Select one:</option>
+          <option value="grid1">display=grid;</option>
+          <option value="grid2">display: grid;</option>
+          <option value="grid3">display grid;</option>
+          <option value="grid4">display-grid;</option>
+        </select>
+        <label for="q2">What is the universal selector in CSS?</label>
+        <textarea id="q2" name="q2" rows="2" placeholder="Include identifier and container"></textarea>
+        <label for="q3">Best practice: 1) CSS coded into .html file, or 2) its own stylesheet?</label>
+        <select id="q3" name="q3">
+          <option value="" selected="selected" disabled="disabled">Select one:</option>
+          <option value="embedded">Embedded</option>
+          <option value="stylesheet">Own stylesheet</option>
+          <option value="neither">It doesn't matter</option>
+        </select>
+        <button type="submit">Submit Quiz</button>
+      </form>
+    </main>
+    <footer>
+      <p>Thank you for your attention to this matter!</p>
+    </footer>
+  </body>
+</html>
