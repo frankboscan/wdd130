@@ -1,0 +1,97 @@
+:root {
+  --primary-color: #0b3d5c; /* deep river blue */
+  --secondary-color: #e07a3d; /* warm canyon orange */
+  --accent1-color: #1a2b3c; /* dark slate */
+  --accent2-color: #f4e8d0; /* sand cream */
+  --heading-font: "Times New Roman", Georgia, serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+header img {
+  width: 80px;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 32px;
+}
+
+/* Style the Hero Div with Overlays */
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  opacity: 0.85;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin: 8px;
+  border: 2px solid var(--secondary-color);
+}
