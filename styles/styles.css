@@ -11,10 +11,12 @@
 }
 
 aside {
+  width: 20rem;
   position: relative;
-  width: 500px;
   background-color: #333;
   color: var(--color2);
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 aside img {
@@ -22,10 +24,19 @@ aside img {
   height: auto;
 }
 
-footer {
-  margin-top: calc(var(--padding) * 2);
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+header, footer {
   border-top: solid 5px #333;
   text-align: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
 }
 
 main img {
@@ -38,18 +49,25 @@ main img {
 }
 
 nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: var(--color1);
   padding: 10px;
 }
 
 nav a {
-  color: var(--color2);
   display: block;
-  padding: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color2);
 }
 
 h1 {
   color: var(--color1);
+  border-bottom: 1px solid black;
 }
 
 h2 {
@@ -66,7 +84,8 @@ img {
 }
 
 main {
-  max-width: 1200px;
+  grid-column: 2/3;
+  margin: 1rem;
 }
 
 p {
