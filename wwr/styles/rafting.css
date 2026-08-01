@@ -69,7 +69,7 @@ header nav a {
 
 header nav a:hover {
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--accent1-color);
 }
 
 h1,
