@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML & CSS Quiz</title>
+  <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+  <header>
+    <h1>HTML and CSS Quiz</h1>
+  </header>
+  <main>
+  <form>
+    <div class="question">
+      <label for="q1">1) What does the acronym HTML stand for?</label>
+      <input type="text" id="q1" name="q1" placeholder="HTML stands for...">
+    </div>
+    <div class="question">
+      <label for="q2">2) What are the principal uses of CSS vs. HTML? One paragraph for each.</label>
+      <textarea id="q2" name="q2" placeholder="CSS is primarily for ...&#10;&#10;HTML is primarily for ..." rows="3"></textarea>
+    </div>
+    <div class="question">
+      <label for="q3">3) What is the current HTML standard?</label>
+      <select id="q3" name="q3">
+        <option value="" selected disabled>Choose wisely</option>
+        <option value="2">2</option>
+        <option value="2.4">2.4</option>
+        <option value="5">5</option>
+        <option value="5.3">5.3</option>
+        <option value="6.0">6.0</option>
+      </select>
+    </div>
+    <div class="question">
+      <label for="q4">4) What is the decimal value of the amount of red in the RGB hexadecimal shorthand #f00?</label>
+      <input id="q4" name="q4" type="number" step="1" placeholder="12 (or is it?)">
+    </div>
+    <button type="submit">Submit Quiz</button>
+  </form>
+  </main>
+  <footer>
+    <p>&copy;2026 | Frank Boscan | WDD 130</p>
+    <br>
+    <p>If this was easy: congratulations. You studied enough.</p>
+    <p>Otherwise: you best consider your ways.</p>
+  </footer>
+</body>
+</html>
