@@ -1,0 +1,100 @@
+:root {
+  --color1: #f00;
+  --color2: #ff0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color1);
+  font-family: monospace;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  max-width: 780px;
+  padding: 1rem;
+  text-align: center;
+}
+
+button {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+button:hover {
+  background-color: var(--color1);
+}
+
+button, input, textarea, select {
+  background-color: var(--color2);
+}
+
+button, input, label, textarea, select {
+  font-family: serif;
+}
+input[type="checkbox"] {
+  accent-color: var(--color2);
+  height: 3rem;
+  vertical-align: bottom;
+  width: 3rem;
+}
+
+fieldset {
+  border-color: var(--color2);
+  border-radius: 10px;
+  display: grid;
+  gap: 1px;
+}
+
+form {
+  background-color: var(--color1);
+  border: 2px solid var(--color2);
+  border-radius: 10px;
+  display: grid;
+  gap: 1rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 90%;
+}
+
+footer {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+input, select, textarea {
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+legend {
+  padding: .5rem;
+}
+
+/* class selectors */
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 1rem;
+}
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
+}
