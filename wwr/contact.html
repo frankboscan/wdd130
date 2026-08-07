@@ -30,10 +30,8 @@
     </div>
     <div class="map-form">
       <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7730.61687829305!2d-119.86163197556105!3d37.87954492341575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8096df119fefa075%3A0xdc9a62c705a9a7a0!2sMather%20Family%20Camp%2C%2035250%20Mather%20Rd%2C%20Groveland%2C%20CA%2095321%2C%20%C3%89tats-Unis!3m2!1d37.883144099999996!2d-119.85383789999999!4m5!1s0x8096df119fefa075%3A0xdc9a62c705a9a7a0!2sMather%20Family%20Camp%2C%2035250%20Mather%20Rd%2C%20Groveland%2C%20CA%2095321%2C%20%C3%89tats-Unis!3m2!1d37.883144099999996!2d-119.85383789999999!5e0!3m2!1sfr!2sfr!4v1786095251389!5m2!1sfr!2sfr"
-              width="100%"
-              height="auto"
-              allowfullscreen=""
               loading="lazy"
+              allowfullscreen
               referrerpolicy="strict-origin-when-cross-origin">
       </iframe>
       <form>
@@ -45,9 +43,9 @@
 
         <label>Message Purpose</label>
         <div class="radio-group">
-          <label><input type="radio" name="purpose" value="general" checked> General Inquiry</label>
-          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-          <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+          <label><input type="radio" id="general" name="purpose" value="general" checked> General Inquiry</label>
+          <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
+          <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
         </div>
 
         <label for="message">Message</label>
@@ -64,15 +62,15 @@
     <div class="serve">
       <h2>Here to Help</h2>
       <figure>
-        <img src="images/beardicus.jpeg" alt="Kevin &quot;Beardicus&quot; Wilkes" width="90%" height="auto">
+        <img src="images/beardicus.jpeg" alt="Kevin &quot;Beardicus&quot; Wilkes">
         <figcaption>Kevin &quot;Beardicus&quot; Wilkes</figcaption>
       </figure>
       <figure>
-        <img src="images/guillermo.webp" alt="Guillermo Lugo" width="90%" height="auto">
+        <img src="images/guillermo.webp" alt="Guillermo Lugo">
         <figcaption>Guillermo Lugo</figcaption>
       </figure>
       <figure>
-        <img src="images/grnest.webp" alt="Ernest Renan" width="90%" height="auto">
+        <img src="images/ernest.webp" alt="Ernest Renan">
         <figcaption>Ernest Renan</figcaption>
       </figure>
     </div>
