@@ -98,7 +98,7 @@ article {
   height: auto;
 }
 
-h1 {
+hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -198,6 +198,93 @@ footer p {
   margin: 0;
   padding: 0;
   color: var(--accent2-color);
+}
+
+.company-info {
+  text-align: center;
+}
+
+.map-form {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 20px;
+  align-items: start;
+  margin: 24px 0;
+}
+
+.map-form iframe {
+  width: 100%;
+  min-height: 360px;
+  border: 1px solid #ccc;
+}
+
+.map-form form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 14px 16px;
+  align-items: start;
+}
+
+.map-form form > label {
+  text-align: left;
+  padding-top: 6px;
+}
+
+.map-form form input[type="text"],
+.map-form form input[type="email"],
+.map-form form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #999;
+  font: inherit;
+}
+
+.map-form form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* Keep all 3 radios in the RIGHT column as one unit */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal;
+}
+
+/* Checkbox row + button span both form columns (like the wireframe) */
+.form-full {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.map-form form button {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 70%;
+  padding: 8px 16px;
+  font: inherit;
+  cursor: pointer;
+}
+
+
+.serve {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.serve h2 {
+  grid-column: 1 / -1;
+  text-align: center;
 }
 
 .socialmedia {
